@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://kit.fontawesome.com/721fde72b8.js" crossorigin="anonymous"></script>
+    <title>Mfrm</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="states.css">
+  </head>
+  <body>
+    <div class="root-container">
+      <div class="content-container">
+        <nav>
+          <div class="nav-shapes">
+            <i class="fa-sharp fa-solid fa-square"></i>
+            <i class="fa-solid fa-circle"></i>
+            <i class="fa-sharp fa-solid fa-play fa-rotate-90"></i>
+          </div>
+        </nav>
+        <header class="contacts">
+          <div class="h-lft">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+            <i class="hdr-title">Contacts</i>
+          </div>
+          <div class="h-rht">
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-ellipsis fa-rotate-90"></i>
+          </div>
+        </header>
+        <form class="" action="index.html" method="post">
+          <ul class="fa-ul" class="contacts-info">
+            <li>
+              <span class="fa-li"><i class="fa-solid fa-user" style="color: #77767b;"></i></span>
+              <input class="border-type1" type="text" name="user" placeholder="Name">
+            </li>
+            <li class="display-type">
+              <span class="fa-li"><i class="fa-sharp fa-solid fa-phone"></i></span>
+              <input class="border-type2 phone" type="tel" name="Phone#" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+              <select class="border-type2 label" class="bt22" name="label" placeholder="label">
+                <option value="">Mobile</option>
+                <option value="">Work</option>
+                <option value="">Landline</option>
+                <option value="" selected>Label</option>
+              </select>
+            </li>
+            <li>
+              <span class="fa-li"><i class="fa-solid fa-location-dot"></i></span>
+              <input class="border-type1" type="text" name="address" placeholder="Address">
+            </li>
+            <li>
+              <input class="border-type2" type="text" name="city" placeholder="City">
+            </li>
+            <li class="display-type">
+              <select class="border-type1 state" value="State" type="text" name="state" placeholder="state">
+                <option value="">Texas</option>
+                <option value="">kentucky</option>
+                <option value="">Arkansas</option>
+              </select>
+              <input class="border-type1 zip" type="number" name="zip" placeholder="Zip">
+            </li>
+            <li>
+              <span class="fa-li"><i class="fa-solid fa-envelope"></i></span>
+              <input class="border-type2" type="text" name="email" placeholder="Email">
+            </li>
+            <li class="border-type1 birth-day">
+              <span class="fa-li"><i class="fa-solid fa-cake-candles"></i></span>
+              <input class="dob" type="date" name="dob" placeholder="Birthday">
+              <i class="fa-solid fa-calendar-day fa-flip-horizontal"></i>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+
+  </body>
+</html>

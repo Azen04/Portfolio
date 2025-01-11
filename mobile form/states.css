@@ -1,0 +1,7 @@
+.hdr-title:hover {
+    color: #14ff00;
+    font-weight: 900;
+    background-color: red;
+    border: solid;
+    border-radius: 8px;
+}

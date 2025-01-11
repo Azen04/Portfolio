@@ -1,0 +1,183 @@
+/* mobile & tablet */
+@media screen and (min-width: 360px) and (max-width: 1023px) {
+    .hero {
+        align-items: center;
+    }  
+    .hire-us {
+        align-items: stretch;
+    }
+    .hire-left {
+        padding: 40px 30px 20px 30px;
+    }
+    .actions {
+        justify-content: center;
+    }
+    .key-benefits {
+        padding: 80px 30px 80px 30px;
+    }
+    .brands {
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+    .hub-spot {
+        flex-wrap: wrap;
+    }
+    .hub-right>img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hire-bottom>.sub-text {
+        margin-bottom: 30px;
+    }
+    .hire-form {
+        max-width: none;
+    }      
+    .hero-title,
+    .hub-right,
+    .banner,
+    .plan-button,
+    .plan-price {
+        text-align: center;
+    }
+    .hero,
+    .hire-us,
+    .footer-block {
+        flex-direction: column;
+    }
+    .banner,
+    .pricing-plan {
+        flex-wrap: wrap;
+    }
+    .banner-left>a {
+        align-self: center;
+    }      
+      .banner-right {
+        margin-top: 0px;
+    }
+    .top-wrapper>a {
+        display: block;
+    }
+    .hire-top>.sub-text>br,
+    .top-wrapper>nav {
+        display: none;
+    }
+    #premium {
+        grid-column: 1;
+    }
+    .bullet-wrapper::before,
+    .bullet-wrapper::after {
+        width: 70px;
+    }
+
+    .hire-left {
+        justify-content: space-around;
+    }
+    #nav-dropdown:target {
+        background-image: none;
+        &>.top-header {
+            height: 100vh;
+            &>.top-wrapper {
+                border-bottom: solid 1px #E7E7E7;
+                &>nav {
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 150px;
+                    left: 25%;
+                    right: 25%;
+                    justify-content: center;
+                    &>.nav-list {
+                        text-align: center;
+                        flex-wrap: wrap;
+                    }
+                }
+            }
+        }
+    }
+}
+/* mobile */
+@media screen and (max-width: 767px) {
+    .hero {
+        padding: 40px 16px 0px 16px;
+    }
+    .feature-container {
+        flex-wrap: wrap;
+    }
+    .hero-title>h1 {
+        font-size: 26px;
+    }
+    .banner {
+        padding: 0px 16px 80px 16px;
+    }
+    .hero-title>h1>br,
+    .hire-top>p>br,
+    .agreement-policies>.blue-text {
+        display: none;
+    }
+    .benefits-title {
+        margin-bottom: 40px;
+    }
+    .pricing-title {
+        margin-bottom: 60px;
+    }
+    .key-benefits {
+        padding: 40px 16px 40px 16px;
+    }
+    .fa-play {
+        transform: translateX(20px);
+    }
+    .why-front,
+    .brands {
+        padding-bottom: 60px;
+    }
+    .why-title {
+        padding: 0px 16px 0px 16px;
+    }
+    .hire-left {
+        padding-left: 16px;
+        padding-right: 16px;
+        text-align: center;
+    }
+    .staff {
+        justify-content: center;
+    }
+    .form-inputs {
+        grid-template-columns: 1fr;
+    }
+    .person-wrapper {
+        height: 315px;
+    }
+    .person-wrapper>.person {
+        width: 262px;
+    }
+    .person-wrapper>.dots {
+        width: 141px;
+        top: 74px;
+        left: 42px;
+    }
+    .nav-list,
+    .footer-info,
+    .bullet-list,
+    .brands-list {
+        flex-direction: column;
+    }
+    .bullet-list {
+        align-items: center;
+    }
+    .bullet {
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 292px;
+    }
+    .bullet-wrapper::before,
+    .bullet-wrapper::after {
+        display: none;
+    }
+    .footer-info {
+        text-align: center;
+    }
+    .footer-info-text>div,
+    .footer-front>div {
+        margin-top: 20px;
+    }
+}

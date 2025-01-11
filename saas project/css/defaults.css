@@ -1,0 +1,109 @@
+:root {
+  --font-color-white: #ffffff;
+  --font-color-gray: #677788;
+  --font-color-black: #000000;
+  --button-color-blue: #2476FF;
+  --sketch-green: #01C9A7;
+  --worlds-best: #5F6368;
+  --were-hiring: #2576FF;
+  --icon-white: #ECF2FF;
+  --shadow-color: #00000040;
+
+  --size-10: 0.625rem;
+  --size-14: 0.875rem;
+  --size-15: 0.938rem;
+  --size-16: 1rem;
+  --size-18: 1.125rem;
+  --size-20: 1.25rem;
+  --size-30: 1.875rem;
+  --size-40: 2.5rem;
+  --size-50: 3.125rem;
+  --size-60: 3.75rem;
+  --size-80: 5rem;
+  --size-100: 6.25rem;
+  --size-150: 9.375rem;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', sans-serif;
+}
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+hr {
+  width: 100%;
+}
+/* layout based defaults below */
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.center {
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+}
+/* layout based defaults above */
+.btn {
+  font-size: 0.75rem;
+  color: var(--font-color-white);
+  background-color: var(--button-color-blue);
+  padding: 0.938rem 1.563rem;
+  border-radius: var(--size-30);
+  line-height: 0.908rem;
+}
+.sketch-btn,
+.hiring-btn {
+  margin-left: var(--size-10);
+}
+.sketch-btn {
+  background-color: var(--sketch-green);
+  padding: 4px 10px;
+}
+.bold-text {
+  font-weight: 700;
+}
+
+.sub-text,
+[for="confirmation"],
+label+span {
+  color: var(--font-color-gray);
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+.blue-text {
+  color: var(--button-color-blue);
+}
+.fa-circle-play {
+  font-size: var(--size-18);
+  line-height: var(--size-18);
+  vertical-align: sub;
+  padding-right: 0.313rem;
+}
+@media screen and (min-width: 1024px) {
+  .fit {
+    max-width: 1024px;
+    margin: auto;
+  }
+}

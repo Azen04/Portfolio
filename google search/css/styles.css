@@ -1,0 +1,196 @@
+.search-results {
+}
+.nav-area {
+  border-bottom: solid 1px #e1e3e6;
+}
+.google-logo {
+  position: absolute;
+  object-fit: scale-down;
+  width: 135px;
+  left: 60px;
+  padding: 10px
+}
+.user {
+  position: absolute;
+  left: auto;
+  bottom: auto;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  gap: 20px;
+}
+.google-logo, .user, .container {
+  padding-top: 10px;
+}
+.profile {
+  border-radius: 50%;
+  width: var(--size-40);
+  height: var(--size-40);
+}
+.grid {
+  display: grid;
+  grid: repeat(3, 1fr) / repeat(3, 1fr);
+  width: 20px;
+  height: 20px;
+}
+.circle {
+  width: 5px;
+  height: 5px;
+  background-color: #6d7074;
+  border-radius: 50%;
+}
+/* navigation-area */
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: solid 1px #e1e3e6;
+  border-radius: var(--size-30);
+  padding: 5px 10px;
+}
+.search-bar > input {
+  flex-grow: 1;
+  border: hidden;
+}
+.search-bar-buttons > .fa-magnifying-glass {
+  color: #4385f4;
+}
+.search-bar-buttons > img {
+  width: 30px;
+  height: 30px;
+  vertical-align: top;
+}
+
+/* linear-gradient( 60deg, rgba(71, 174, 98, 1), rgba(71, 174, 98, 1) 70%),
+linear-gradient(90deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%); */
+/* linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); */
+.search-bar-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex: 0.35;
+}
+.search-bar-buttons .seperator {
+  border-color: #e1e3e6;
+  display: inline-block;
+  border-style: none none none solid;
+  border-width: 1px;
+  height: 25px;
+  transform: translate(5px);
+}
+.search-bar-buttons > .fa-times {
+  color: #7c8084;
+}
+/* search-section-end Nav-section-start */
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nl, .other-options > span {
+  padding: 15px 10px;
+  display: inline-block;
+  border-bottom: solid;
+  border-color: white;
+}
+.nav-links span:hover, .other-options > span:hover {
+  border-color: #4385f4;
+  color: #4385f4;
+}
+nav .fa-solid, nav .fa-regular {
+  margin-right: 5px;
+  &:hover {
+    color:transparent;
+    background: conic-gradient( rgba(71, 174, 98, 1) 0deg 90deg, #4385f4 90deg 180deg, rgba(250, 195, 42, 1) 180deg 270deg, rgba(236, 85, 72, 1) 270deg 360deg );
+    background-clip: text;
+  }
+}
+/* nav-section-end */
+.number-of-results, .sub-results, nav, .feedback {
+  color: #6d7074;
+}
+.block-txt {
+  margin: var(--size-20) 0;
+}
+.block-txt p {
+  color: #4b4f54;
+}
+ .search-result, .block-txt p > a, .bot-google-logo > a {
+  text-decoration: none;
+}
+.search-result {
+  display: block;
+  margin: 5px 0px;
+}
+.feedback {
+  margin-left: 87%;
+}
+ul {
+  border-radius: var(--size-10);
+  overflow: hidden;
+}
+.people-also-ask {
+  padding: 7.5px inherit;
+}
+ul, li {
+  border: solid 1px #e1e3e6;
+}
+ul > li {
+  padding: 10px 15px;
+}
+.down-arrow {
+  border: none;
+  background-color: transparent;
+  float: right;
+}
+ .nav-to-next-page-hub.container {
+  text-align: center;
+  width: 1200px;
+  max-width: 1200px;
+}
+.bot-google-logo {
+  display: grid;
+  grid-template-columns: repeat(13, 0fr);
+  grid-template-rows: 48px 50px;
+  font-weight: bold;
+  font-size: 40px;
+  justify-content: center;
+}
+.bot-google-logo > a {
+  font-size: 20px;
+  font-weight: normal;
+}
+#e {
+  color: transparent;
+  background: linear-gradient(to right, #4385f4 37%, rgba(71, 174, 98, 1) 37% 61%, rgba(236, 85, 72, 1) 61% );
+  background-clip: text;
+}
+#e::after {
+  content: " ";
+  display: inline-block;
+  border-style: solid solid none none;
+  width: 12px;
+  height: 12px;
+  margin-top: 15px;
+  margin-left: 20px;
+  transform: rotate(45deg);
+  position: absolute;
+  font-size: 10px;
+  color: #4385f4;
+}
+#g {
+  color: #4385f4;
+}
+.page-num {
+  color: rgba(250, 195, 42, 1);
+}
+[href="#10"]::after {
+  position: absolute;
+  content: 'Next';
+  color: #4385f4;
+  margin-left: 65px;
+}
+.page-num:target {
+  color: rgba(236, 85, 72, 1);
+}
+/* red:rgba(236, 85, 72, 1) green:rgba(71, 174, 98, 1) yellow:rgba(250, 195, 42, 1) blue:#4385f4  */

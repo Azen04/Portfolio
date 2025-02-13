@@ -1,0 +1,512 @@
+/* unique */
+html { scroll-behavior: smooth; }
+
+nav {
+  padding: 1rem;
+}
+.nav-brand {
+  font-size: 2rem;
+  flex-grow: 1;
+  animation-name: leftSlideIn;
+}
+.nav-links {
+  animation-name: topSlideIn;
+}
+.hero-cta {
+  animation-name: fullOpacity;
+}
+.nav-links a {
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+}
+.nav-toggler {
+  outline: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+[aria-controls="navbardropdown"] {
+  display: none;
+}
+.nav-toggler span {
+  font-size: 1.4rem;
+  pointer-events: none;
+}
+.hero {
+  height: 100vh;
+  background-image: url(../assets/images/CodeRadassets/CodeRad-assets/bg-header-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 20%;
+  padding: 2rem;
+}
+.hero::before {
+  background-image: linear-gradient(
+    30deg,
+    rgba(21, 27, 38, 0.8) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+    );
+  
+  content: "";
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.why_us {
+  padding: var(--size-150) 4.6875rem;
+}
+.why_us-left {
+  max-width: 29rem;
+  padding-right: var(--size-100);
+}
+.why_us-imgcontainer img {
+  width: 100%;
+}
+.service_cards,
+.plans,
+.pricing_plans {
+  background-color: var(--contrast);
+}
+.testimonial-text {
+  margin: var(--size-100) 0;
+}
+.pricing_plans-cards {
+  max-width: 720px;
+}
+.pricing_plans-cards .container {
+  grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+  margin-top: var(--size-100);
+  align-items: flex-start;
+}
+.service_cards-container-cards {
+  box-shadow: 0 0 10px rgba(48, 63, 100, 0.15);
+  background: var(--white);
+}
+.service_cards-container-cards span {
+  display: block;
+  width: 4.375rem;
+  height: 4.375rem;
+  float: left;
+  border-radius: 35px;
+  margin-right: var(--size-10);
+}
+.service_cards-container-cards-picture-color-1 {
+  background-image: linear-gradient(90deg, #9ccdf3 0%, #94aafd 100%);
+}
+.service_cards-container-cards-picture-color-2 {
+  background-image: linear-gradient(90deg, #55edc0 0%, #4bdbdb 100%);
+}
+.service_cards-container-cards-picture-color-3 {
+  background-image: linear-gradient(90deg, #fda498 0%, #f58b9e 100%);
+}
+.service_cards-container-cards-picture-color-4 {
+  background-image: linear-gradient(90deg, #f2a7ca 0%, #c289f4 100%);
+}
+.service_cards-container-cards-picture-color-5 {
+  background-image: linear-gradient(90deg, #ffc187 0%, #fe93a7 100%);
+}
+.service_cards-container-cards-picture-color-6 {
+  background-image: linear-gradient(90deg, #a1ecff 0%, #7dbc77 100%);
+}
+.our_story {
+  background-image: url("bg-demo.jpg");
+  padding: 4.6875rem;
+}
+.our_story-paragraph {
+  margin-bottom: var(--size-50);
+}
+.our_story-video {
+  margin-bottom: -9.375rem;
+}
+.our_story-video a {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 10px 15px rgba(57, 166, 251, 0.5);
+  z-index: 11;
+}
+.our_story-video a img {
+  width: var(--size-100);
+  height: var(--size-100);
+}
+.our_story-video > img {
+  max-width: 600px;
+}
+.pricing_plans-text,
+.pricing_plans-cards {
+  margin: auto;
+}
+.pricing_plans-cards-container-plans-rate {
+  margin-bottom: var(--size-30)
+}
+.pricing_plans-cards-container-plans {
+  background-color: var(--white);
+  padding: var(--size-40) var(--size-16);
+  transition: box-shadow .2s, margin-top .2s;
+}
+.plan-btn-wrapper {
+  display: none;
+}
+.pricing_plans-cards-container-plans:hover {
+  box-shadow: 0 10px 20px rgba(82, 179, 255, 0.2);
+  margin-top: -1rem;
+  & > .plan-btn-wrapper {
+    display: block;
+  }
+}
+.pricing_plans-cards-container-plans h3 {
+  margin-top: var(--size-40);
+}
+.fa-check {
+  color: var(--success);
+}
+.fa-times {
+  color: var(--danger);
+}
+.testimonial-container-card-top {
+  padding-bottom: var(--size-10);
+}
+.testimonial-container-card img.profile {
+  border-radius: 50%;
+  margin-right: var(--size-20);
+}
+.testimonial-container-card-top.deborah .profile {
+  width: 5rem;
+}
+.top h4 {
+  margin-top: 0;
+  margin-bottom: var(--size-10);
+  font-size: var(--size-18);
+}
+.testimonial-container-card {
+  border: 1px solid #dedede;
+}
+.testimonial-container-card-bottom p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: var(--size-16);
+}
+.testimonial-container-card.deborah {
+  grid-row: 1/3;
+  grid-column: 1/2;
+}
+.quote {
+  margin-top: var(--size-16);
+}
+.testimonial .container {
+  grid-template-rows: 1fr;
+  gap: var(--size-20); 
+}
+.testimonial {
+  margin-bottom: var(--size-100);
+}
+.testimonial-container-card p {
+  font-size: var(--size-14)
+}
+footer img {
+  max-width: var(--size-150);
+}
+footer .footer-top {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--size-50);
+}
+.footer-top > div {
+  justify-self: center;
+}
+.footer-bottom {
+  background-color: var(--footer-base);
+}
+.footer-top-services p,
+.footer-top-recent-contentblock span,
+.copyrights {
+  color: var(--font-color-base)
+}
+.footer-top-recent {
+  grid-column: 1 / 3;
+}
+.footer-top-services h3 {
+  margin-bottom: initial;
+}
+.footer-bottom-content {
+  justify-content: space-evenly;
+}
+.footer-bottom-content span {
+  padding-top: 15px;
+  padding-bottom: var(--size-30);
+}
+.footer-top-recent-contentblock {
+  gap: var(--size-20) var(--size-10);
+}
+.help-icons {
+  margin-top: 15px;
+}
+.help-icons i {
+  margin-right: var(--size-30);
+}
+.fa-ul {
+  line-height: 2;
+  margin-left: var(--fa-li-margin,1.4em);
+}
+.scroll-up {
+  font-size: var(--size-20);
+  display: inline-block;
+  top: 92%;
+  text-align: end;
+}
+.scroll-up i {
+  padding: var(--size-20);
+  border-radius: var(--size-10);
+  background-image: linear-gradient(90deg, #9ccdfe 0%, #94aafd 100%);
+  margin-right: 20px;
+}
+.pricing_plans-cards-container-plans-price {
+  font-size: var(--size-30);
+  color: var(--font-color-link);
+}
+.quote {
+  text-align: end;
+}
+.footer-top-recent {
+  flex-direction: column;
+}
+.footer-top-recent {
+  gap: 10px;
+}
+/* general */ 
+.nav-brand,
+.hero-cta,
+.nav-links {
+  animation-duration: 1s;
+}
+
+.hero,
+.our_story {
+  z-index: 1;
+}
+nav,
+.hero::before,
+.scroll-up {
+  right: 0;
+  left: 0;
+}
+.scroll-up,
+.nav-toggler span {
+  cursor: pointer;
+}
+nav,
+.scroll-up {
+  position: fixed;
+  z-index: 500;
+}
+.testimonial .container,
+.footer-top {
+  margin: 0 auto;
+}
+.service_cards .container,
+.testimonial .container {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.testimonial-container-card img.profile,
+.quote img {
+  width: 70px;
+}
+.plan-btn-wrapper a,
+.footer-bottom-content {
+  width: 100%;
+}
+.fa-check, 
+.fa-times {
+  float: right;
+} 
+.our_story-video a,
+.hero::before {
+  position: absolute;
+}
+.hero,
+.our_story-video,
+.our_story-video img,
+.our_story,
+.testimonial-container-card.deborah {
+  position: relative;
+}
+.service_cards-container-cards,
+.our_story-video img,
+.testimonial-container-card,
+.pricing_plans-cards-container-plans {
+  border-radius: 8px;
+}
+.service_cards-container-cards,
+.testimonial-container-card {
+  padding: var(--size-30);
+}
+.pricing_plans-cards .container,
+.service_cards .container {
+  gap: var(--size-18);
+}
+.pricing_plans-cards .container,
+.testimonial .container,
+.service_cards .container {
+  display: grid;
+}
+.testimonial-text,
+.our_story,
+.pricing_plans-text h2,
+.pricing_plans-text p,
+.pricing_plans-cards-container-plans h3,
+.pricing_plans-cards-container-plans-price,
+.pricing_plans-cards-container-plans-rate,
+.plan-btn-wrapper,
+.footer-bottom-content {
+  text-align: center;
+}
+.why_us-left span {
+  font-weight: 300;
+}
+.why_us-left h2,
+.our_story-header,
+.pricing_plans-text h2,
+.testimonial h2  {
+  font-size: var(--size-40);
+  margin-top: .5rem;
+  line-height: 1.3;
+}
+.why_us-left h2,
+.our_story-header,
+.pricing_plans-text h2,
+.testimonial h2,
+.pricing_plans-cards-container-plans li {
+  margin-bottom: var(--size-20);
+}
+.why_us-left,
+.our_story-header,
+.pricing_plans-text h2,
+.nav-links a,
+.testimonial h2 {
+  font-family: "Hind", sans-serif;
+}
+.why_us-left,
+.pricing_plans-text h2,
+.testimonial h2,
+.pricing_plans-cards-container-plans h3 {
+  color: var(--font-color-dark);
+}
+.footer-top {
+  padding: var(--size-100) 0;
+}
+.why_us-left h2,
+.our_story-header,
+.pricing_plans-text h2,
+.pricing_plans-cards-container-plans-price,
+.testimonial h2 {
+  font-weight: bold;
+}
+.nav-links > a,
+.our_story-paragraph,
+.pricing_plans-cards-container-plans h3,
+.top h4 {
+  font-weight: 600;
+}
+nav,
+.navbar-nav,
+.why_us,
+.nav-links,
+.hero,
+.footer-bottom,
+.testimonial-container-card-top,
+.footer-bottom-content,
+.footer-top-recent-contentblock,
+.footer-top-recent,
+.footer-top {
+  display: flex;
+}
+.why_us img,
+.footer-top-recent-contentblock,
+.footer-top {
+  flex-wrap: wrap;
+}
+.why_us,
+.footer-bottom,
+.footer-top {
+  justify-content: center;
+}
+.nav-links,
+.testimonial .container {
+  gap: 2.5rem;
+}
+nav,
+.hero,
+.why_us,
+.testimonial-container-card-top {
+  align-items: center;
+}
+.nav-brand,
+.footer-nav,
+.footer-top-recent-contentblock p {
+  font-weight: 700;
+}
+.nav-brand,
+.nav-links a,
+.nav-toggler span,
+footer,
+.hero-cta,
+.our_story,
+.scroll-up {
+  color: var(--white);
+}
+.nav-brand,
+.nav-links a,
+.nav-toggler span {
+  transition: ease-in-out 0.3s;
+}
+.service_cards,
+.pricing_plans {
+  padding: var(--size-150) 0;
+}
+.our_story,
+footer {
+  background-color: var(--footer);
+}
+.why_us-left {
+  transform: translateX(-100px);
+}
+.why_us-imgcontainer,
+.cards,
+.our_story-header,
+.pricing_plans-text,
+.testimonial-text {
+  transform: translateY(-100px);
+}
+.our_story-video,
+.plans,
+.testimonials {
+  transform: translateY(100px);
+}
+.why_us-left,
+.why_us-imgcontainer,
+.cards,
+.our_story-header,
+.our_story-paragraph,
+.our_story-video,
+.pricing_plans-text,
+.plans,
+.testimonial-text,
+.testimonials {
+  filter: blur(5px);
+  opacity: 0;
+  transition: opacity .2s, transform .5s, filter .2s;
+}
+
+/* dynamic */
+.sticky {
+  background-color: var(--white);
+  box-shadow: 0px 0px 20px rgba(48, 63, 100, 0.2);
+}
+.sticky a,
+.sticky .nav-toggler span {
+  color: var(--font-color-dark);
+}
+.fullopacity {
+  opacity: 1;  
+  transform: translate(0,0);
+  filter: blur(0);
+}
+
